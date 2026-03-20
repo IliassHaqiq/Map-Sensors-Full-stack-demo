@@ -6,6 +6,13 @@ This repository contains:
 - **MongoDB**: initialization script + indexes (`mongo/`)
 - **Dataset**: station metadata CSV (`data/PeMSD7_M_Station_Info.csv`)
 
+
+## Screen Shots from the project
+
+[![Accueil](docs/images/image1.png)](docs/images/image1.png)
+[![Accueil](docs/images/image2.png)](docs/images/image2.png)
+
+
 ## Project structure
 
 - `frontend/`: Vite app (React, Leaflet)
