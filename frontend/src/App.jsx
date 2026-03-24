@@ -24,7 +24,7 @@ export default function App() {
   });
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/stations")
+    fetch("/api/stations")
       .then((res) => res.json())
       .then(setStations)
       .catch(console.error);

@@ -127,3 +127,35 @@ docker run -d --name sensors-frontend --network sensors-net -p 5173:5173 sensors
 - **Mongo connection fails**: ensure `MONGO_URI` points to the right host (`localhost` for local, `mongo` for Docker network).
 - **Ports already in use**: stop the process using `5173`, `5000`, or `27017`, or remap ports with `-p HOST:CONTAINER`.
 
+
+## View The Data Stored In MongoDb
+
+
+- In order to see the data that are stored in your database, you have to execute this commands
+
+1. Docker Ps:
+   ```powershell
+   docker ps
+   ```
+
+2. Then:
+   ```powershell
+   docker exec -it mongodb mongosh
+
+3. Then:
+  ```powershell
+  use sensorsdb
+  ```
+
+4. Then: 
+  ```powershell
+  show collections
+  ```
+
+5. Then: 
+  ```powershell
+  db.stations.find().pretty()`
+  ```
+
+
+  [![Accueil](docs/images/image3.png)](docs/images/image3.png)
